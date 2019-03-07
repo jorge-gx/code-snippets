@@ -1,4 +1,9 @@
--- using PS_TERM_VAL_TBL
+/*
+Extracting date from term description, uses regex. 
+Term tables from PeopleSoft Campus Solutions
+*/
+
+/* using PS_TERM_VAL_TBL */
 SELECT distinct PS_TERM_VAL_TBL.STRM
 		,PS_TERM_VAL_TBL.DESCR
 		,regexp_instr(PS_TERM_VAL_TBL.DESCR,'[[:digit:]]') as First_Digit_Pos  -- gets the position of the first Digit from left to right
@@ -8,7 +13,7 @@ WHERE  PS_TERM_VAL_TBL.STRM = PS_SSR_TSRSLT_TRM.STRM
 AND PS_SSR_TSRSLT_TRM.STRM in ('3090', '3091', '3093', '3095')
 order by PS_TERM_VAL_TBL.STRM;
 
--- using PS_TERM_TBL
+/* using PS_TERM_TBL */
 SELECT distinct STRM
 		,DESCR
 		,regexp_instr(DESCR,'[[:digit:]]') as First_Digit_Pos  -- gets the position of the first Digit from left to right
