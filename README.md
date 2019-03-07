@@ -1,2 +1,2 @@
 # sql-learning
-SQL 
+Learning SQL, exercises, useful snippets
