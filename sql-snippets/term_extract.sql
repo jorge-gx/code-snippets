@@ -1,4 +1,5 @@
 /*
+term_extract.sql
 Extracting date from term description, uses regex. 
 Term tables from PeopleSoft Campus Solutions
 */
