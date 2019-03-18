@@ -1,5 +1,6 @@
-// used this to set up error loggin on a side project
-
+# used this to set up error loggin on a side project
+# used a config file to store file paths
+# need to revisit to clean it up
 
 import logging.handlers
 from configparser import ConfigParser
